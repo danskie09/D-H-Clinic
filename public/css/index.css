@@ -1,0 +1,169 @@
+html,body{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mynav{
+    color: #fff;
+}
+
+.mynav li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+.mynav li a.active{
+    background: rgba(255,255,255,0.2);
+}
+
+.mynav li a:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+.mynav li a i{
+    width: 25px;
+    text-align: center;
+}
+
+.notification-badge{
+    background-color: rgba(255,255,255,0.7);
+    float: right;
+    color: #222;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 2px;
+}
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 350px;
+  }
+  .horizontal-list-item {
+    margin-right: 30px;
+    padding: 2px 6px;
+    border: 1px solid whitesmoke; 
+    border-radius: 6px;
+    
+  }
+  .horizontal-list-item:hover{
+    
+    border: 1px solid rgb(218, 212, 212); 
+    border-radius: 6px;
+    background: rgb(218, 212, 212);
+  }
+
+  .horizontal-list-item.active a {
+    
+    background: green;
+    color: white;
+    border: 1px solid green; 
+    border-radius: 6px;
+  }
+
+  .horizontal-list-item a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }
+
+  .dateNav{
+    max-width: 500px;
+    padding: 5px;
+    border: 1px solid #ddd;
+      border-radius: 10px;
+      
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .calendarContainer {
+    width: 100%;
+padding: 10px 15px;
+    height: 380px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    overflow-y: hidden;
+}
+
+
+
+
+.edit-button {
+    margin-left: 10px;
+    color: white; 
+    text-decoration: none;
+}
+
+.edit-button:hover {
+    opacity: 0.7;
+}
+
+.logout{
+    text-decoration: none;
+}
+
+.profile {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.analytics .card {
+    height: 180px; 
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.analytics .card-title,.card-text{
+    color: whitesmoke;
+}
+ 
+.total-users-card {
+    background-color: #f55f5f; /* Light red */
+}
+
+.recipes-added-card {
+    background-color: #74ec74; /* Light green */
+}
+
+.groceries-added-card {
+    background-color: #5e5ee6; /* Light blue */
+}
+
+.customer-feedbacks-card {
+    background-color: #ecb74d; /* Light orange */
+}
+
+  /* Responsive styles */
+  @media (max-width: 576px) {
+    .horizontal-list {
+      flex-wrap: wrap;
+    }
+    .horizontal-list-item {
+      margin-right: 10;
+      margin-bottom: 10px;
+    }
+
+    
+  }
+
+  .table-font{
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .table-background{
+    background: #69b669;
+  }
+
+
+
+ 
+
+ 
+  

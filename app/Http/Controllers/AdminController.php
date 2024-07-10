@@ -8,6 +8,9 @@ use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\MyNotification;
+
 class AdminController extends Controller
 {
      public function addview(){
@@ -65,8 +68,23 @@ class AdminController extends Controller
          if (!$id->user_id) {
              $id->user_id = $request->user_id;
          }
+
+         
+
+
+         
      
          $id->update();
+
+         $id->notify(new MyNotification($id));
+        
+        
+
+           
+         
+
+
+    
      
          return redirect()->route('view.appointments')->with('message', 'Appointment approved successfully');
      }

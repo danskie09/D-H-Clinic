@@ -107,7 +107,7 @@
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="phoneNumber" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" name="phone"  id="phoneNumber" value="{{ $appointment->phone }}" readonly>
+          <input type="tel" class="form-control" name="phone"  id="phoneNumber" value="{{ $appointment->phone }}">
         </div>
         <div class="col-md-6 mb-3">
           <label for="message" class="form-label">Purpose</label>

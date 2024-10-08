@@ -6,7 +6,9 @@ use App\Models\Appointment;
 use App\Models\Doctor;
 use App\Models\User;
 use Carbon\Carbon;
+
 use Illuminate\Http\Request;
+
 
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\MyNotification;
@@ -71,12 +73,30 @@ class AdminController extends Controller
 
          
 
-
+         $id->update();
          
      
-         $id->update();
+        
 
          $id->notify(new MyNotification($id));
+
+
+        //  $basic  = new \Vonage\Client\Credentials\Basic("a5d6dfbe", "pWArJLPO0vDuSRod");
+        //  $client = new \Vonage\Client($basic);
+
+        //  $response = $client->sms()->send(
+        //     new \Vonage\SMS\Message\SMS($id->phone, "DH Clinic", 'A test message from Daniel part 1')
+        // );
+        
+        // $message = $response->current();
+        
+        // if ($message->getStatus() == 0) {
+        //     echo "The message was sent successfully\n";
+        // } else {
+        //     echo "The message failed with status: " . $message->getStatus() . "\n";
+        // }
+
+
         
         
 
